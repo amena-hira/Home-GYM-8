@@ -5,3 +5,9 @@
     border-radius: 8px;
     margin: 7px;
 }
+@media (max-width: 575px)  { 
+    .activity img{
+        width: 100px;
+        height: 100px;
+    }
+}
