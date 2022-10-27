@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
+import Main from './Component/Main/Main';
 
 function App() {
   const [activities, setActivities] = useState([]);
@@ -11,9 +12,7 @@ function App() {
   },[])
   return (
     <div className="App">
-      {
-        activities.map(activity => <img src={activity.img} alt="" /> )
-      }
+      <Main></Main>
     </div>
   );
 }
