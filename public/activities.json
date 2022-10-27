@@ -1,0 +1,38 @@
+[
+  {
+    "id": "635af0e531e29ddf96c87ae3",
+    "name": "Bike",
+    "img": "./image/bike.jpg",
+    "time": 14
+  },
+  {
+    "id": "635af0e56baab62ab51ca62b",
+    "name": "Elliptical",
+    "img": "./image/elliptical.jpg",
+    "time": 22
+  },
+  {
+    "id": "635af0e56a6f425f8e662339",
+    "name": "Skillrow",
+    "img": "./image/skillrow.jpg",
+    "time": 5
+  },
+  {
+    "id": "635af0e5886ef8678b316e4a",
+    "name": "Treadmill",
+    "img": "./image/treadmill.jpg",
+    "time": 13
+  },
+  {
+    "id": "635af0e548ad6d0c411a8116",
+    "name": "Unica",
+    "img": "./image/unica.jpg",
+    "time": 48
+  },
+  {
+    "id": "635af0e5a411da894b202198",
+    "name": "Weight Bench",
+    "img": "./image/weight_bench.png",
+    "time": 39
+  }
+]
