@@ -18,6 +18,12 @@
 .exercise-div{
     margin: 30px 0px;
 }
+.activities-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin-top: 50px;
+}
 
 @media (max-width: 575.98px)  { 
     .image{
@@ -29,6 +35,11 @@
     }
     .exercise-div h3{
         font-size: 15px;
+    }
+    .activities-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 8px;
     }
 }
 @media (max-width: 767.98px) { 
@@ -42,4 +53,16 @@
     .exercise-div h3{
         font-size: 12px;
     }
+    .activities-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 8px;
+    }
  }
+ @media (max-width: 991.98px) { 
+    .activities-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+    }
+  }
