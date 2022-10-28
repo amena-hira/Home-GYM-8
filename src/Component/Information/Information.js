@@ -3,14 +3,20 @@ import './Information.css';
 import Break from '../Break/Break';
 import Info from '../Info/Info';
 import Experience from '../Experience/Experience';
+import { useState } from 'react';
 
 const Information = (props) => {
+    const [breakTime, setBreakTime] = useState();
+    const selectBreak = (breakTime) =>{
+        console.log(breakTime);
+        setBreakTime(breakTime);
+    }
     
     return (
         <div className="col-4 col-md-3 pt-5 info-container container">
             <Info></Info>
-            <Break></Break>
-            <Experience activity = {props.activity}></Experience>
+            <Break selectBreakTime={selectBreak}></Break>
+            <Experience activity = {props.activity} breakTime={breakTime} ></Experience>
 
         </div>
     );

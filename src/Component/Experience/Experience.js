@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Experience = (props) => {
-    const { activity } = props;
+    const { activity, breakTime } = props;
     let total = 0;
     for (const item of activity) {
         total = total + item.time;
@@ -17,7 +17,7 @@ const Experience = (props) => {
 
                 <div className='bg-white d-lg-flex align-items-center justify-content-between px-3 rounded py-3'>
                     <h6>Break time</h6>
-                    <h6 className='fw-lighter'>20 seconds</h6>
+                    <h6 className='fw-lighter'>{breakTime} seconds</h6>
                 </div>
             </div>
 
