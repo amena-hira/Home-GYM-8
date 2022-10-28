@@ -5,10 +5,11 @@ const Exercise = (props) => {
     const {name, img, time} = props.activity;
     return (
         <div className='col mt-4'>
-            <div className="card p-2" style={{width: "18rem"}}>
+            <div className="card p-2" >
                 <img src={img} className="card-img-top img-thumbnail"  alt="" style={{height: "10rem"}} />
                 <div className="card-body">
-                    <h5 className="card-title">{name}</h5>
+                    <p className="card-title fw-bold fs-5 ">{name}</p>
+                    <p>Time: {time} min</p>
                     
                     <a href="" className='btn btn-primary'>Add to list</a>
                 </div>

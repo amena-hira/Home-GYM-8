@@ -1,13 +1,14 @@
 import React from 'react';
 import Exercises from '../Exercises/Exercises';
+import Information from '../Information/Information';
 // import './Main.css';
 
 const Main = () => {
     return (
-        <div className="container">
+        <div className="container main-container">
             <div className="row">
                 <Exercises></Exercises>
-                <div className="col-3">col-4</div>
+                <Information></Information>
             </div>
         </div>
     );

@@ -12,7 +12,7 @@ const Exercises = () => {
         .then(data => setActivities(data));
     },[])
     return (
-        <div className="col-9 my-5 ps-5">
+        <div className="col-9 my-5 ">
             <div className='d-flex align-items-start'>
                 <img className='logo-image me-3' src={logo} alt="" />
                 <h3 className='text-primary'>Home GYM</h3>
