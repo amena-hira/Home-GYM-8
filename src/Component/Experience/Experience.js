@@ -1,6 +1,17 @@
 import React from 'react';
+ 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+ 
+
 
 const Experience = (props) => {
+    const showToastMessage = () => {
+        toast.success('Success Notification !', {
+            position: toast.POSITION.TOP_CENTER
+        });
+    };
+
     const { activity, breakTime } = props;
     let total = 0;
     for (const item of activity) {
@@ -31,7 +42,8 @@ const Experience = (props) => {
                 </div>
             </div>
 
-            <button className='btn btn-primary w-100'>Activity Completed</button>
+            <button onClick={showToastMessage} className='btn btn-primary w-100'>Activity Completed</button>
+            <ToastContainer />
         </div>
     );
 };
