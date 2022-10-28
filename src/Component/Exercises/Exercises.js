@@ -33,11 +33,16 @@
 
 // export default Exercises;
 import React from 'react';
+import logo from '../../image/favicon.ico';
+import './Exercises.css';
 
 const Exercises = () => {
     return (
-        <div className="col-8">
-            right
+        <div className="col-8 my-5 ps-5">
+            <div className='d-flex align-items-start'>
+                <img className='logo-image me-3' src={logo} alt="" />
+                <h3 className='text-primary'>Home GYM</h3>
+            </div>
         </div>
     );
 };
