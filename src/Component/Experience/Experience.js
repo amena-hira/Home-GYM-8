@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Experience = (props) => {
     const showToastMessage = () => {
-        toast.success('Complete, you are done!!', {
+        toast.success('Complete, you are done! !', {
             position: toast.POSITION.TOP_CENTER
         });
     };
@@ -23,8 +23,11 @@ const Experience = (props) => {
     if (breakTimeLocal) {
         time = breakTimeLocal
     }
-    else{
+    else if(breakTime){
         time = breakTime;
+    }
+    else{
+        time = 0;
     }
     return (
         <div>
