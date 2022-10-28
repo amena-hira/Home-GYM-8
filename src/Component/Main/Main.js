@@ -4,7 +4,7 @@ import Exercises from '../Exercises/Exercises';
 
 const Main = () => {
     return (
-        <div class="container text-center">
+        <div class="container">
             <div class="row">
                 <Exercises></Exercises>
                 <div class="col-4">col-4</div>
