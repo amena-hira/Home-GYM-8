@@ -6,6 +6,15 @@ const Experience = (props) => {
     for (const item of activity) {
         total = total + item.time;
     }
+    const breakTimeLocal = localStorage.getItem('Break-Time');
+    console.log(breakTimeLocal);
+    let time;
+    if (breakTimeLocal) {
+        time = breakTimeLocal
+    }
+    else{
+        time = breakTime;
+    }
     return (
         <div>
             <h5 className='mt-4 mb-3'>Experience Details</h5>
@@ -17,7 +26,8 @@ const Experience = (props) => {
 
                 <div className='bg-white d-lg-flex align-items-center justify-content-between px-3 rounded py-3'>
                     <h6>Break time</h6>
-                    <h6 className='fw-lighter'>{breakTime} seconds</h6>
+                    <h6 className='fw-lighter'>
+                        {time} seconds</h6>
                 </div>
             </div>
 
