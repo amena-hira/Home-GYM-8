@@ -1,18 +1,22 @@
 import React from 'react';
-import './Exercise.css';
+// import './Exercise.css';
 
 const Exercise = (props) => {
     const {name, img, time} = props.activity;
     return (
-        <div className='activity '>
-            {/* <img src={img} alt="" />
-            <div className='activity-info'>
-                <p>{name}</p>
-                <p>Time required: {time}mint</p>
+        <div className='col mt-4'>
+            <div className="card p-2" style={{width: "18rem"}}>
+                <img src={img} className="card-img-top img-thumbnail"  alt="" style={{height: "10rem"}} />
+                <div className="card-body">
+                    <h5 className="card-title">{name}</h5>
+                    
+                    <a href="" className='btn btn-primary'>Add to list</a>
+                </div>
             </div>
-            <button className='btn btn-success'>Add to list</button> */}
+            
         </div>
     );
 };
+
 
 export default Exercise;

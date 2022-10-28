@@ -4,10 +4,10 @@ import Exercises from '../Exercises/Exercises';
 
 const Main = () => {
     return (
-        <div class="container">
-            <div class="row">
+        <div className="container">
+            <div className="row">
                 <Exercises></Exercises>
-                <div class="col-4">col-4</div>
+                <div className="col-3">col-4</div>
             </div>
         </div>
     );
