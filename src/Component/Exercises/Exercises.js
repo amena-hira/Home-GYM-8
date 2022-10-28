@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../../image/favicon.ico';
 import './Exercises.css';
 import Exercise from '../Exercise/Exercise';
+import Question from '../Question/Question';
 
 const Exercises = (props) => {
     console.log("exercises: ",props)
@@ -19,6 +20,10 @@ const Exercises = (props) => {
                     }
                 </div>
             </div>
+            <div className='container mt-5'>
+                <Question></Question>
+            </div>
+            
         </div>
     );
 };

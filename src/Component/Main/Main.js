@@ -23,10 +23,6 @@ const Main = () => {
         console.log(newSelectedActivity)
         
     }
-    
-    // useEffect(() =>{
-
-    // },[])
     return (
         <div className="container main-container">
             <div className="row">
