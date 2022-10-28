@@ -1,8 +1,8 @@
 import React from 'react';
-// import './Exercise.css';
 
 const Exercise = (props) => {
-    const {name, img, time} = props.activity;
+    const {activity, addtime} = props;
+    const {id, name, img, time} = activity;
     return (
         <div className='col mt-4'>
             <div className="card p-2" >
@@ -11,7 +11,7 @@ const Exercise = (props) => {
                     <p className="card-title fw-bold fs-5 ">{name}</p>
                     <p>Time: {time} min</p>
                     
-                    <a href="" className='btn btn-primary'>Add to list</a>
+                    <button onClick={() => addtime(activity)} className='btn btn-primary'>Add to list</button>
                 </div>
             </div>
             

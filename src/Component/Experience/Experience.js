@@ -1,13 +1,18 @@
 import React from 'react';
 
-const Experience = () => {
+const Experience = (props) => {
+    const { activity } = props;
+    let total = 0;
+    for (const item of activity) {
+        total = total + item.time;
+    }
     return (
         <div>
             <h5 className='mt-4 mb-3'>Experience Details</h5>
             <div className='mb-5'>
                 <div className='bg-white d-lg-flex align-items-center justify-content-between px-3 pt-3 py-2 rounded my-3'>
                     <h6>Exercise Details</h6>
-                    <h6 className='fw-lighter'>200 seconds</h6>
+                    <h6 className='fw-lighter'>{total} minutes</h6>
                 </div>
 
                 <div className='bg-white d-lg-flex align-items-center justify-content-between px-3 rounded py-3'>
