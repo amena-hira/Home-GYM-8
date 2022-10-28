@@ -1,7 +1,7 @@
 import React from 'react';
 import Exercises from '../Exercises/Exercises';
 import Information from '../Information/Information';
-// import './Main.css';
+import './Main.css';
 
 const Main = () => {
     return (
